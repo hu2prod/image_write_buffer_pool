@@ -1,0 +1,29 @@
+{
+  "name": "image_write_buffer_pool",
+  "version": "1.0.0",
+  "description": "pool for vairable size buffer (combo with napi_png encoder)",
+  "main": "lib/index.js",
+  "scripts": {
+    "install": "iced -o lib -c src",
+    "test": "mocha --recursive --compilers coffee:iced-coffee-script/register --require iced-coffee-coverage/register-istanbul test && istanbul report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hu2prod/image_write_buffer_pool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hu2prod/image_write_buffer_pool/issues"
+  },
+  "homepage": "https://github.com/hu2prod/image_write_buffer_pool#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.16",
+    "iced-coffee-coverage": "^1.0.21",
+    "iced-coffee-script": "^108.0.11",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "napi_png": "github:hu2prod/napi_png"
+  }
+}
